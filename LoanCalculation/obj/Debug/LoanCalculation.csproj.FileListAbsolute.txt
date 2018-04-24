@@ -1,0 +1,14 @@
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\bin\Debug\LoanCalculation.exe.config
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\bin\Debug\LoanCalculation.exe
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\bin\Debug\LoanCalculation.pdb
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.csprojResolveAssemblyReference.cache
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\MainWindow.g.cs
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\App.g.cs
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation_MarkupCompile.cache
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation_MarkupCompile.lref
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\MainWindow.baml
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.g.resources
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.Properties.Resources.resources
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.csproj.GenerateResource.Cache
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.exe
+d:\documents\visual studio 2015\Projects\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.pdb

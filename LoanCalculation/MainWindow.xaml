@@ -1,0 +1,42 @@
+﻿<Window x:Class="LoanCalculation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoanCalculation"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400">
+    <Grid>
+        <Label x:Name="label" Content="贷款利息计算" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Width="86" Height="28"/>
+        <Label x:Name="label1" Content="输入金额：" HorizontalAlignment="Left" Margin="47,48,0,0" VerticalAlignment="Top" Width="73"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="192,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160"/>
+        <Label x:Name="label1_Copy" Content="开始日期：" HorizontalAlignment="Left" Margin="47,87,0,0" VerticalAlignment="Top" Width="73"/>
+        <DatePicker x:Name="datePickerCtl" Height="25"
+            SelectedDateFormat="Long" FirstDayOfWeek="Monday"
+            DisplayDateStart="1989/1/1"
+            IsTodayHighlighted="True" Margin="192,88,24,457">
+        </DatePicker>
+        <Label x:Name="label1_Copy1" Content="结束日期：" HorizontalAlignment="Left" Margin="47,131,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy2" Content="利率标准：" HorizontalAlignment="Left" Margin="47,173,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy3" Content="倍率：" HorizontalAlignment="Left" Margin="47,228,0,0" VerticalAlignment="Top" Width="73"/>
+
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="40" Margin="192,173,0,0" VerticalAlignment="Top" Width="176">
+            <ListBoxItem Content="六个月内（含六个月）"/>
+            <ListBoxItem Content="六个月至一年（含一年）"/>
+            <ListBoxItem Content="一至三年（含三年）"/>
+            <ListBoxItem Content="三至五年（含五年）"/>
+            <ListBoxItem Content="五年以上"/>
+        </ListBox>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="30,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"
+                    Background="AntiqueWhite" Foreground="Navy" Height="232" Width="338"/>
+        <Button x:Name="button" Content="重置" HorizontalAlignment="Left" Margin="66,522,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button_Copy" Content="计算" HorizontalAlignment="Left" Margin="239,522,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker x:Name="datePickerCtl_Copy" Height="25"
+        	SelectedDateFormat="Long" FirstDayOfWeek="Monday"
+        	DisplayDateStart="1989/1/1"
+        	IsTodayHighlighted="True" Margin="192,131,24,414"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="192,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="label1_Copy4" Content="倍" HorizontalAlignment="Left" Margin="295,231,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.101,0.445"/>
+
+    </Grid>
+</Window>
