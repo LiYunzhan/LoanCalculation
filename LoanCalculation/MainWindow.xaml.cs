@@ -23,6 +23,38 @@ namespace LoanCalculation
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double temp;
+            if (!double.TryParse(textBox.Text, out temp))
+            {
+                System.Windows.MessageBox.Show("只能输入数字", "提示");
+            }
+        }
+
+        private void textBox_Copy_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            double temp;
+            if (!double.TryParse(textBox.Text, out temp))
+            {
+                System.Windows.MessageBox.Show("只能输入数字", "提示");
+            }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            textBox.Text = "";
+            textBox_Copy.Text = "";
+            datePickerCtl.Text = "";
+            datePickerCtl_Copy.Text = "";
+        }
+
+        private void button_Copy_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
