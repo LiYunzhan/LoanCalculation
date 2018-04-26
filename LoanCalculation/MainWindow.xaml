@@ -5,38 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LoanCalculation"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
-    <Grid>
-        <Label x:Name="label" Content="贷款利息计算" HorizontalAlignment="Left" Margin="140,10,0,0" VerticalAlignment="Top" Width="86" Height="28"/>
+        Title="MainWindow" Height="800" Width="600">
+    <Grid Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}">
+        <Label x:Name="label" Content="贷款利息计算" HorizontalAlignment="Left" Margin="258,10,0,0" VerticalAlignment="Top" Width="86" Height="28"/>
         <Label x:Name="label1" Content="输入金额：" HorizontalAlignment="Left" Margin="47,48,0,0" VerticalAlignment="Top" Width="73"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="192,48,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="160" TextChanged="textBox_TextChanged"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="275,51,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="252" TextChanged="textBox_TextChanged" Background="#FFF7F4F4"/>
         <Label x:Name="label1_Copy" Content="开始日期：" HorizontalAlignment="Left" Margin="47,87,0,0" VerticalAlignment="Top" Width="73"/>
         <DatePicker x:Name="datePickerCtl" Height="25" Text="选择日期"
             SelectedDateFormat="Short" FirstDayOfWeek="Monday"
             DisplayDateStart="1989/1/1"
-            IsTodayHighlighted="True" Margin="192,88,24,457">
+            IsTodayHighlighted="True" Margin="275,88,65,657">
         </DatePicker>
         <Label x:Name="label1_Copy1" Content="结束日期：" HorizontalAlignment="Left" Margin="47,131,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label x:Name="label1_Copy2" Content="利率标准：" HorizontalAlignment="Left" Margin="47,173,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label x:Name="label1_Copy3" Content="倍率：" HorizontalAlignment="Left" Margin="47,228,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy2" Content="利率标准：" HorizontalAlignment="Left" Margin="47,187,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy3" Content="倍率：" HorizontalAlignment="Left" Margin="47,236,0,0" VerticalAlignment="Top" Width="73"/>
 
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="40" Margin="192,173,0,0" VerticalAlignment="Top" Width="176">
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="40" Margin="275,173,0,0" VerticalAlignment="Top" Width="252">
             <ListBoxItem Content="六个月内（含六个月）"/>
             <ListBoxItem Content="六个月至一年（含一年）"/>
             <ListBoxItem Content="一至三年（含三年）"/>
             <ListBoxItem Content="三至五年（含五年）"/>
             <ListBoxItem Content="五年以上"/>
         </ListBox>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="30,270,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"
-                    Background="AntiqueWhite" Foreground="Navy" Height="232" Width="338"/>
-        <Button x:Name="button" Content="重置" HorizontalAlignment="Left" Margin="66,522,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button_Copy" Content="计算" HorizontalAlignment="Left" Margin="239,522,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy_Click"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="47,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"
+                    Background="AntiqueWhite" Foreground="Navy" Height="390" Width="502"/>
+        <Button x:Name="button" Content="重置" HorizontalAlignment="Left" Margin="337,719,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button_Copy" Content="计算" HorizontalAlignment="Left" Margin="452,719,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy_Click"/>
         <DatePicker x:Name="datePickerCtl_Copy" Height="25" Text="选择日期"
         	SelectedDateFormat="Short" FirstDayOfWeek="Monday"
         	DisplayDateStart="1989/1/1"
-        	IsTodayHighlighted="True" Margin="192,131,24,414"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="192,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="85" TextChanged="textBox_Copy_TextChanged"/>
-        <Label x:Name="label1_Copy4" Content="倍" HorizontalAlignment="Left" Margin="295,231,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.101,0.445"/>
+        	IsTodayHighlighted="True" Margin="275,132,65,613"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="275,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" TextChanged="textBox_Copy_TextChanged" Background="#FFF7F2F2"/>
+        <Label x:Name="label1_Copy4" Content="倍" HorizontalAlignment="Left" Margin="428,236,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.101,0.445"/>
+        <Label x:Name="label1_Copy5" Content="结果：" HorizontalAlignment="Left" Margin="47,283,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy6" Content="" HorizontalAlignment="Left" Margin="275,283,0,0" VerticalAlignment="Top" Width="204" Background="#FFFDF4F4"/>
 
     </Grid>
 </Window>
