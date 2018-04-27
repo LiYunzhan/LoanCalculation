@@ -95,7 +95,7 @@ namespace LoanCalculation
                         var days = (endDate - startDate).Days;
                         var subResult = Compute(item, days, exchangeRate, total, multiple);
                         stringBuilder.Append("从" + startDate.ToShortDateString() + "到" + endDate.ToShortDateString() + ", 汇率为" + subResult.Item2
-                            + "天数为" + days + ",小计为" + subResult.Item1);
+                            + ",天数为" + days + ",小计为" + subResult.Item1);
                         stringBuilder.Append("\n");
 
                         result = result + subResult.Item1;
@@ -107,7 +107,7 @@ namespace LoanCalculation
                         var subResult = Compute(item, days, exchangeRate, total, multiple);
 
                         stringBuilder.Append("从" + item.StartDate.ToShortDateString() + "到" + endDate.ToShortDateString() + ", 汇率为" + subResult.Item2
-                            + "天数为" + days + ",小计为" + subResult.Item1);
+                            + ",天数为" + days + ",小计为" + subResult.Item1);
                         stringBuilder.Append("\n");
 
                         result = result + subResult.Item1;
@@ -122,7 +122,7 @@ namespace LoanCalculation
                         var subResult = Compute(item, days, exchangeRate, total, multiple);
 
                         stringBuilder.Append("从" + startDate.ToShortDateString() + "到" + item.EndDate.ToShortDateString() + ", 汇率为" + subResult.Item2
-                            + "天数为" + days + ",小计为" + subResult.Item1);
+                            + ",天数为" + days + ",小计为" + subResult.Item1);
                         stringBuilder.Append("\n");
 
                         result = result + subResult.Item1;
@@ -134,7 +134,7 @@ namespace LoanCalculation
                         var subResult = Compute(item, days, exchangeRate, total, multiple);
 
                         stringBuilder.Append("从" + item.StartDate.ToShortDateString() + "到" + item.EndDate.ToShortDateString() + ", 汇率为" + subResult.Item2
-                            + "天数为" + days + ",小计为" + subResult.Item1);
+                            + ",天数为" + days + ",小计为" + subResult.Item1);
                         stringBuilder.Append("\n");
 
                         result = result + subResult.Item1;
@@ -175,7 +175,7 @@ namespace LoanCalculation
             }
             decimal result = rate / 360 * total * days * multiple;
             var resultFormate = Math.Round(result, 2, MidpointRounding.AwayFromZero);
-            return new Tuple<decimal, decimal>(resultFormate, rate*100M);
+            return new Tuple<decimal, decimal>(resultFormate, Math.Round(rate * 100M, 2, MidpointRounding.AwayFromZero));
         }
 
         public class Loan

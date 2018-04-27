@@ -25,3 +25,4 @@ E:\LoanCalculation\LoanCalculation\obj\Debug\MainWindow.baml
 E:\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.g.resources
 E:\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.Properties.Resources.resources
 E:\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.csproj.GenerateResource.Cache
+E:\LoanCalculation\LoanCalculation\obj\Debug\LoanCalculation.csprojResolveAssemblyReference.cache
