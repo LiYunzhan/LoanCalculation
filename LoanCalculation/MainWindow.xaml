@@ -17,16 +17,8 @@
             IsTodayHighlighted="True" Margin="275,88,65,657">
         </DatePicker>
         <Label x:Name="label1_Copy1" Content="结束日期：" HorizontalAlignment="Left" Margin="47,131,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label x:Name="label1_Copy2" Content="利率标准：" HorizontalAlignment="Left" Margin="47,187,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label x:Name="label1_Copy3" Content="倍率：" HorizontalAlignment="Left" Margin="47,236,0,0" VerticalAlignment="Top" Width="73"/>
-
-        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="40" Margin="275,173,0,0" VerticalAlignment="Top" Width="252">
-            <ListBoxItem Content="六个月内（含六个月）"/>
-            <ListBoxItem Content="六个月至一年（含一年）"/>
-            <ListBoxItem Content="一至三年（含三年）"/>
-            <ListBoxItem Content="三至五年（含五年）"/>
-            <ListBoxItem Content="五年以上"/>
-        </ListBox>
+        <Label x:Name="label1_Copy2" Content="利率标准：" HorizontalAlignment="Left" Margin="47,169,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy3" Content="倍率：" HorizontalAlignment="Left" Margin="47,218,0,0" VerticalAlignment="Top" Width="73"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="47,314,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top"
                     Background="AntiqueWhite" Foreground="Navy" Height="390" Width="502"/>
         <Button x:Name="button" Content="重置" HorizontalAlignment="Left" Margin="337,719,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
@@ -35,10 +27,17 @@
         	SelectedDateFormat="Short" FirstDayOfWeek="Monday"
         	DisplayDateStart="1989/1/1"
         	IsTodayHighlighted="True" Margin="275,132,65,613"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="275,239,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" TextChanged="textBox_Copy_TextChanged" Background="#FFF7F2F2"/>
-        <Label x:Name="label1_Copy4" Content="倍" HorizontalAlignment="Left" Margin="428,236,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.101,0.445"/>
-        <Label x:Name="label1_Copy5" Content="结果：" HorizontalAlignment="Left" Margin="47,283,0,0" VerticalAlignment="Top" Width="73"/>
-        <Label x:Name="label1_Copy6" Content="" HorizontalAlignment="Left" Margin="275,283,0,0" VerticalAlignment="Top" Width="204" Background="#FFFDF4F4"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="275,221,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="118" TextChanged="textBox_Copy_TextChanged" Background="#FFF7F2F2"/>
+        <Label x:Name="label1_Copy4" Content="倍" HorizontalAlignment="Left" Margin="428,221,0,0" VerticalAlignment="Top" Width="39" RenderTransformOrigin="2.101,0.445"/>
+        <Label x:Name="label1_Copy5" Content="结果：" HorizontalAlignment="Left" Margin="47,263,0,0" VerticalAlignment="Top" Width="73"/>
+        <Label x:Name="label1_Copy6" Content="" HorizontalAlignment="Left" Margin="275,263,0,0" VerticalAlignment="Top" Width="204" Background="#FFFDF4F4"/>
+        <ComboBox x:Name="comboBox" HorizontalAlignment="Left" Margin="275,173,0,0" VerticalAlignment="Top" Width="252">
+            <ComboBoxItem Content="六个月内（含六个月）" HorizontalAlignment="Left" Width="250"/>
+            <ComboBoxItem Content="六个月至一年（含一年）" HorizontalAlignment="Left" Width="250"/>
+            <ComboBoxItem Content="一至三年（含三年）" HorizontalAlignment="Left" Width="250"/>
+            <ComboBoxItem Content="三至五年（含五年）" HorizontalAlignment="Left" Width="250"/>
+            <ComboBoxItem Content="五年以上" HorizontalAlignment="Left" Width="250"/>
+        </ComboBox>
 
     </Grid>
 </Window>
